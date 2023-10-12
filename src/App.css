@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+/* all */
+html {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 3px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+    margin: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 50vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 50vw;
+}
+
+/* FavoriteDriver.js */
+
+.driver-button {
+    height: 23vh;
+    width: 48vw;
+    border-radius: 25px;
+    font-size: 4vw;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    margin: 1vh 1vw 1vh 1vw;
+    text-align: center;
+}
+
+/* UpcomingRaces.js */
+
+.upcomming-races {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 23vh;
+    width: 48vw;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    margin: 1vh 1vw 1vh 1vw;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* DriversChampionship.js */
+
+.driver-standings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 48vh;
+    width: 48vw;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    margin: 1vh 1vw 1vh 1vw;
+    text-align: left;
+    font-size: 10px;
+}
+
+/* ConstructorsChampionship */
+
+.constructor-standings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 48vh;
+    width: 48vw;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    margin: 1vh 1vw 1vh 1vw;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* QualifyingResults.js */
+
+.qualifying-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 23vh;
+    width: 48vw;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    margin: 1vh 1vw 1vh 1vw;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0;
+}
+
+/* RaceResults.js */
+.race-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 23vh;
+    width: 48vw;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    margin: 1vh 1vw 1vh 1vw;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0;
+}
+
+/* CSS for the popup container */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+  
+/* CSS for the close button */
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+}
+  
+/* CSS for the popup content */
+.popup-content {
+    padding: 20px;
+}
+  
+/* Additional styles for the table */
+.popup-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+  
+.popup-content table th,
+.popup-content table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
 }

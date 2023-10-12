@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ConstructorsChampionship from "./components/ConstructorsChampionship";
+import DriversChamionship from "./components/DriversChampionship";
+import FavoriteDriver from "./components/FavoriteDriver";
+import QualifyingResults from "./components/QualifyingResults";
+import RaceResults from "./components/RaceResults";
+import UpcomingRaces from "./components/UpcomingRaces";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="row">
+        <div className="column">
+          <FavoriteDriver />
+          <UpcomingRaces />
+        </div>
+        <div className="column">
+          <DriversChamionship />
+        </div>
+      </div>
+      <div className="row">
+        <div className="column">
+          <ConstructorsChampionship />
+        </div>
+        <div className="column">
+          <QualifyingResults />
+          <RaceResults />
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;
