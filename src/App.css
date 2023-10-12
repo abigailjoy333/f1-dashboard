@@ -1,6 +1,7 @@
 /* all */
 html {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
 }
 
 body {
@@ -43,9 +44,11 @@ p {
     font-size: 4vw;
     border-style: solid;
     border-width: 3px;
-    border-color: black;
+    border-color: white;
     margin: 1vh 1vw 1vh 1vw;
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 /* UpcomingRaces.js */
@@ -60,10 +63,11 @@ p {
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
-    border-color: black;
+    border-color: white;
     margin: 1vh 1vw 1vh 1vw;
     font-size: 12px;
     text-align: center;
+    color: white;
 }
 
 /* DriversChampionship.js */
@@ -78,10 +82,11 @@ p {
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
-    border-color: black;
+    border-color: white;
     margin: 1vh 1vw 1vh 1vw;
     text-align: left;
     font-size: 10px;
+    color: white;
 }
 
 /* ConstructorsChampionship */
@@ -96,10 +101,11 @@ p {
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
-    border-color: black;
+    border-color: white;
     margin: 1vh 1vw 1vh 1vw;
     text-align: left;
     font-size: 15px;
+    color: white;
 }
 
 /* QualifyingResults.js */
@@ -114,11 +120,13 @@ p {
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
-    border-color: black;
+    border-color: white;
     margin: 1vh 1vw 1vh 1vw;
     font-size: 4vw;
     text-align: center;
     padding: 0;
+    background-color: black;
+    color: white;
 }
 
 /* RaceResults.js */
@@ -132,11 +140,13 @@ p {
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
-    border-color: black;
+    border-color: white;
     margin: 1vh 1vw 1vh 1vw;
     font-size: 4vw;
     text-align: center;
     padding: 0;
+    background-color: black;
+    color: white;
 }
 
 /* CSS for the popup container */

@@ -4,7 +4,7 @@ function DriversChamionship() {
     const [driverStandings, setDriverStandings] = useState([]);
 
     useEffect(() => {
-        fetch('http://ergast.com/api/f1/current/driverStandings.json')
+        fetch('https://ergast.com/api/f1/current/driverStandings.json')
             .then((response) => response.json())
             .then((data) => {
                 // Extract driver standings data

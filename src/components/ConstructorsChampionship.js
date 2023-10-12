@@ -4,7 +4,7 @@ function ConstructorsChamionship() {
     const [constructorStandings, setConstructorStandings] = useState([]);
 
     useEffect(() => {
-        fetch('http://ergast.com/api/f1/current/constructorStandings.json')
+        fetch('https://ergast.com/api/f1/current/constructorStandings.json')
             .then((response) => response.json())
             .then((data) => {
                 // Extract constructor standings data

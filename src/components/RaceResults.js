@@ -4,7 +4,7 @@ function RaceResults() {
   const [raceResults, setRaceResults] = useState(null);
 
   const handleFetchRaceResults = () => {
-    fetch('http://ergast.com/api/f1/current/last/results.json')
+    fetch('https://ergast.com/api/f1/current/last/results.json')
       .then((response) => response.json())
       .then((data) => {
         const results = data.MRData.RaceTable.Races[0].Results;

@@ -6,7 +6,7 @@ function UpcomingRaces() {
     useEffect(() => {
         const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
 
-        fetch('http://ergast.com/api/f1/current.json')
+        fetch('https://ergast.com/api/f1/current.json')
             .then((response) => response.json())
             .then((data) => {
                 // Extract the list of races

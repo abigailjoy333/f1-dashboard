@@ -5,7 +5,7 @@ function QualifyingResults() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
 
     const handleFetchQualifyingResults = () => {
-        fetch('http://ergast.com/api/f1/current/qualifying.json')
+        fetch('https://ergast.com/api/f1/current/qualifying.json')
             .then((response) => response.json())
             .then((data) => {
                 const races = data.MRData.RaceTable.Races;

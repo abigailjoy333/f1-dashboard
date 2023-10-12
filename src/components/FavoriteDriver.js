@@ -6,7 +6,7 @@ function FavoriteDriver() {
   
     useEffect(() => {
         // Make an API request to fetch a list of drivers
-        fetch('http://ergast.com/api/f1/2023/drivers.json')
+        fetch('https://ergast.com/api/f1/2023/drivers.json')
             .then((response) => response.json())
             .then((data) => {
                 setDrivers(data.MRData.DriverTable.Drivers);
