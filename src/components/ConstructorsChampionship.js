@@ -20,7 +20,7 @@ function ConstructorsChamionship() {
   
     return (
         <div className='constructor-standings'>
-            <h2>Current Constructor Standings</h2>
+            <h2>CONSTRUCTOR STANDINGS</h2>
             <table>
                 <tbody>
                     {constructorStandings.map((constructor, index) => (

@@ -22,7 +22,7 @@ function UpcomingRaces() {
 
     return (
         <div className='upcomming-races'>
-            <h2>Next 3 Races</h2>
+            <h2>UPCOMING RACES</h2>
             <div>
                 {nextRaces.map((race, index) => (
                     <p key={index}>

@@ -20,7 +20,7 @@ function DriversChamionship() {
 
     return (
         <div className='driver-standings'>
-            <h2>Current Driver Standings</h2>
+            <h2>DRIVER STANDINGS</h2>
             <table>
                 <tbody>
                     {driverStandings.map((driver, index) => (

@@ -18,7 +18,7 @@ function RaceResults() {
 
   return (
     <div>
-      <button className='race-results' onClick={handleFetchRaceResults}>Race Results</button>
+      <button className='race-results' onClick={handleFetchRaceResults}>RACE RESULTS</button>
       {raceResults && (
         <div className="popup">
           <div className="popup-content">

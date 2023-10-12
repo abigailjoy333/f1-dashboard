@@ -23,7 +23,7 @@ function FavoriteDriver() {
                 onChange={(e) => setSelectedDriver(e.target.value)}
                 value={selectedDriver}
             >
-            <option value="">Select a driver</option>
+            <option value="">★</option>
                 {drivers.map((driver, index) => (
                     <option key={index} value={driver.driverId}>
                         {driver.givenName} {driver.familyName} - {driver.permanentNumber}
