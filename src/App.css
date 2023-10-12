@@ -22,6 +22,7 @@ p {
 .row {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     height: 50vh;
@@ -30,6 +31,7 @@ p {
 .column {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     margin: 0;
     padding: 0;
     width: 50vw;
@@ -41,15 +43,15 @@ p {
     height: 23vh;
     width: 48vw;
     border-radius: 25px;
-    font-size: 3vw;
+    font-size: 5vw;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color: white;
-    margin: 1vh 1vw 1vh 1vw;
     text-align: center;
     background-color: black;
     color: white;
     font-family: inherit;
+    white-space: normal;
 }
 
 /* UpcomingRaces.js */
@@ -63,9 +65,8 @@ p {
     width: 48vw;
     border-radius: 25px;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color: white;
-    margin: 1vh 1vw 1vh 1vw;
     font-size: 1.5vw;
     text-align: center;
     color: white;
@@ -82,9 +83,8 @@ p {
     width: 48vw;
     border-radius: 25px;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color: white;
-    margin: 1vh 1vw 1vh 1vw;
     text-align: left;
     font-size: 1vh;
     color: white;
@@ -101,11 +101,10 @@ p {
     width: 48vw;
     border-radius: 25px;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color: white;
-    margin: 1vh 1vw 1vh 1vw;
     text-align: left;
-    font-size: 2vh;
+    font-size: 1.5vh;
     color: white;
 }
 
@@ -120,9 +119,8 @@ p {
     width: 48vw;
     border-radius: 25px;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color: white;
-    margin: 1vh 1vw 1vh 1vw;
     font-size: 3vw;
     text-align: center;
     padding: 0;
@@ -141,9 +139,8 @@ p {
     width: 48vw;
     border-radius: 25px;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color: white;
-    margin: 1vh 1vw 1vh 1vw;
     font-size: 3vw;
     text-align: center;
     padding: 0;
@@ -158,10 +155,19 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 50vw;
+    height: 75vh;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    text-align: left;
+    font-size: 1.5vh;
+    color: white;
+    background-color: black;
+    padding: 15px;
 }
   
 /* CSS for the close button */
@@ -171,12 +177,7 @@ p {
     right: 10px;
     font-size: 20px;
     cursor: pointer;
-    color: #000;
-}
-  
-/* CSS for the popup content */
-.popup-content {
-    padding: 20px;
+    color: white;
 }
   
 /* Additional styles for the table */
@@ -188,7 +189,7 @@ p {
   
 .popup-content table th,
 .popup-content table td {
-    padding: 8px;
+    padding: 3px;
     border: 1px solid #ddd;
     text-align: left;
 }

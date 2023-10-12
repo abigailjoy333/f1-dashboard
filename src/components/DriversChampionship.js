@@ -26,7 +26,7 @@ function DriversChamionship() {
                     {driverStandings.map((driver, index) => (
                         <tr key={index}>
                         <td>{driver.position}</td>
-                        <td>{`${driver.Driver.givenName} ${driver.Driver.familyName} - ${driver.Driver.permanentNumber}`}</td>
+                        <td>{`${driver.Driver.givenName} ${driver.Driver.familyName}`}</td>
                         <td>{driver.Constructors[0].name}</td>
                         <td>{driver.points}</td>
                         </tr>

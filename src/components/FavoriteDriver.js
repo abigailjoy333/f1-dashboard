@@ -26,7 +26,7 @@ function FavoriteDriver() {
             <option value="">★</option>
                 {drivers.map((driver, index) => (
                     <option key={index} value={driver.driverId}>
-                        {driver.givenName} {driver.familyName} - {driver.permanentNumber}
+                        {driver.givenName} {driver.familyName} {driver.permanentNumber}
                     </option>
                 ))}
             </select>
