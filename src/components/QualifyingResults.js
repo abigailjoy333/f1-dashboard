@@ -27,7 +27,7 @@ function QualifyingResults() {
                         <span className="close" onClick={() => setIsPopupVisible(false)}>
                             &times;
                         </span>
-                        <h2>Most Recent Qualifying Results</h2>
+                        <h2>LATEST QUALIFYING RESULTS</h2>
                         <table>
                             <tbody>
                             {qualifyingData.map((result, index) => (

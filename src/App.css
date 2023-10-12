@@ -1,18 +1,22 @@
 /* all */
 html {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(./images/f1-bgv-1.jpeg);
+    background-size: cover;
 }
 
 body {
-    margin: 0;
+    margin: 5px;
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: 3vh;
     font-weight: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     margin: 0 0 3px 0;
+    color: crimson;
+    letter-spacing: 2px;
 }
 
 p {
@@ -41,15 +45,15 @@ p {
 
 .driver-button {
     height: 23vh;
-    width: 48vw;
+    width: 48.5vw;
     border-radius: 25px;
-    font-size: 5vw;
+    font-size: 6vw;
     border-style: solid;
-    border-width: 2px;
-    border-color: white;
+    border-width: 3px;
+    border-color: palevioletred;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0, .8);
+    color: crimson;
     font-family: inherit;
     white-space: normal;
 }
@@ -65,11 +69,13 @@ p {
     width: 48vw;
     border-radius: 25px;
     border-style: solid;
-    border-width: 2px;
-    border-color: white;
-    font-size: 1.5vw;
+    border-width: 3px;
+    border-color: palevioletred;
+    background-color: rgb(0, 0, 0, .8);
+    font-size: 1.5vh;
+    font-family: monospace;
     text-align: center;
-    color: white;
+    color: ivory;
 }
 
 /* DriversChampionship.js */
@@ -83,11 +89,14 @@ p {
     width: 48vw;
     border-radius: 25px;
     border-style: solid;
-    border-width: 2px;
-    border-color: white;
+    border-width: 3px;
+    border-color: palevioletred;
+    background-color: rgb(0, 0, 0, .8);
     text-align: left;
-    font-size: 1vh;
-    color: white;
+    font-size: 1.25vh;
+    font-family: monospace;
+    color: ivory;
+    line-height: 1;
 }
 
 /* ConstructorsChampionship */
@@ -101,11 +110,13 @@ p {
     width: 48vw;
     border-radius: 25px;
     border-style: solid;
-    border-width: 2px;
-    border-color: white;
+    border-width: 3px;
+    border-color: palevioletred;
+    background-color: rgb(0, 0, 0, .8);
     text-align: left;
     font-size: 1.5vh;
-    color: white;
+    font-family: monospace;
+    color: ivory;
 }
 
 /* QualifyingResults.js */
@@ -119,13 +130,13 @@ p {
     width: 48vw;
     border-radius: 25px;
     border-style: solid;
-    border-width: 2px;
-    border-color: white;
-    font-size: 3vw;
+    border-width: 3px;
+    border-color: palevioletred;
+    font-size: 8vh;
     text-align: center;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0, .8);
+    color: crimson;
     font-family: inherit;
 }
 
@@ -139,13 +150,13 @@ p {
     width: 48vw;
     border-radius: 25px;
     border-style: solid;
-    border-width: 2px;
-    border-color: white;
-    font-size: 3vw;
+    border-width: 3px;
+    border-color: palevioletred;
+    font-size: 8vh;
     text-align: center;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0, .8);
+    color: crimson;
     font-family: inherit;
 }
 
@@ -155,19 +166,19 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
+    width: 75vw;
     height: 75vh;
-    background-color: #fff;
     z-index: 1000;
     border-radius: 25px;
     border-style: solid;
-    border-width: 2px;
-    border-color: white;
+    border-width: 3px;
+    border-color: palevioletred;
     text-align: left;
     font-size: 1.5vh;
     color: white;
     background-color: black;
     padding: 15px;
+    font-family: monospace;
 }
   
 /* CSS for the close button */

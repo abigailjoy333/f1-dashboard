@@ -25,7 +25,7 @@ function RaceResults() {
             <span className="close" onClick={() => setRaceResults(null)}>
               &times;
             </span>
-            <h2>Latest Race Results</h2>
+            <h2>LATEST RACE RESULTS</h2>
             <table>
               <tbody>
                 {raceResults.map((result, index) => (
