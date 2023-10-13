@@ -1,6 +1,6 @@
 import "./App.css";
 import ConstructorsChampionship from "./components/ConstructorsChampionship";
-import DriversChamionship from "./components/DriversChampionship";
+import DriversChampionship from "./components/DriversChampionship";
 import FavoriteDriver from "./components/FavoriteDriver";
 import QualifyingResults from "./components/QualifyingResults";
 import RaceResults from "./components/RaceResults";
@@ -15,12 +15,12 @@ function App() {
           <UpcomingRaces />
         </div>
         <div className="column">
-          <DriversChamionship />
+          <ConstructorsChampionship />
         </div>
       </div>
       <div className="row">
         <div className="column">
-          <ConstructorsChampionship />
+          <DriversChampionship />
         </div>
         <div className="column">
           <QualifyingResults />

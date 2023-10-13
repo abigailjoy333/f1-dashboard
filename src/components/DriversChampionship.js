@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function DriversChamionship() {
+function DriversChampionship() {
     const [driverStandings, setDriverStandings] = useState([]);
 
     useEffect(() => {
@@ -37,4 +37,4 @@ function DriversChamionship() {
     );
 }
 
-export default DriversChamionship;
+export default DriversChampionship;

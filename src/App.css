@@ -26,10 +26,11 @@ p {
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
+    justify-content: flex-start;
     padding: 0;
     height: 50vh;
+    margin-left: 0;
+    width: 100%;
 }
 
 .column {
@@ -38,14 +39,14 @@ p {
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
-    width: 50vw;
+    width: 50%;
 }
 
 /* FavoriteDriver.js */
 
 .driver-button {
-    height: 23vh;
-    width: 48.5vw;
+    height: 20vh;
+    width: 46.5vw;
     border-radius: 25px;
     font-size: 6vw;
     border-style: solid;
@@ -56,6 +57,7 @@ p {
     color: crimson;
     font-family: inherit;
     white-space: normal;
+    margin: 0;
 }
 
 /* UpcomingRaces.js */
@@ -65,8 +67,8 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 23vh;
-    width: 48vw;
+    height: 20vh;
+    width: 46vw;
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
@@ -76,6 +78,8 @@ p {
     font-family: monospace;
     text-align: center;
     color: ivory;
+    margin: 0;
+
 }
 
 /* DriversChampionship.js */
@@ -86,14 +90,14 @@ p {
     justify-content: center;
     align-items: center;
     height: 48vh;
-    width: 48vw;
+    width: 54vw;
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
     border-color: palevioletred;
     background-color: rgb(0, 0, 0, .8);
     text-align: left;
-    font-size: 9px;
+    font-size: 10px;
     font-family: monospace;
     color: ivory;
     line-height: .9;
@@ -126,18 +130,19 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 23vh;
-    width: 48vw;
+    height: 20vh;
+    width: 40vw;
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
     border-color: palevioletred;
-    font-size: 6vh;
+    font-size: 5vh;
     text-align: center;
     padding: 0;
     background-color: rgb(0, 0, 0, .8);
     color: crimson;
     font-family: inherit;
+    margin: 0 0 0 8vw;
 }
 
 /* RaceResults.js */
@@ -146,18 +151,19 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 23vh;
-    width: 48vw;
+    height: 20vh;
+    width: 40vw;
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
     border-color: palevioletred;
-    font-size: 6vh;
+    font-size: 5vh;
     text-align: center;
     padding: 0;
     background-color: rgb(0, 0, 0, .8);
     color: crimson;
     font-family: inherit;
+    margin: 0 0 0 8vw;
 }
 
 /* CSS for the popup container */
