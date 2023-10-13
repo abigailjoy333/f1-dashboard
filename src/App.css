@@ -28,8 +28,8 @@ p {
     flex-direction: row;
     justify-content: flex-start;
     padding: 0;
-    height: 50vh;
-    margin-left: 0;
+    height: 48vh;
+    margin: 0;
     width: 100%;
 }
 
@@ -89,7 +89,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 48vh;
+    height: 43vh;
     width: 54vw;
     border-radius: 25px;
     border-style: solid;
@@ -110,7 +110,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 48vh;
+    height: 43vh;
     width: 48vw;
     border-radius: 25px;
     border-style: solid;
