@@ -19,7 +19,7 @@ function ConstructorsChamionship() {
     }, []);
   
     return (
-        <div className='constructor-standings'>
+        <div id='constructors-championship-color' className='constructor-standings'>
             <h2>CONSTRUCTOR STANDINGS</h2>
             <table>
                 <tbody>

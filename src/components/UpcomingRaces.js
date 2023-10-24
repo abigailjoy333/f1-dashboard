@@ -21,7 +21,7 @@ function UpcomingRaces() {
     }, []);
 
     return (
-        <div className='upcomming-races'>
+        <div id='upcoming-races-color' className='upcomming-races'>
             <h2>UPCOMING RACES</h2>
             <div>
                 {nextRaces.map((race, index) => (

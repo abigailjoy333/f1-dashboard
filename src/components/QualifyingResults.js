@@ -20,7 +20,7 @@ function QualifyingResults() {
 
     return (
         <div>
-            <button className='qualifying-results' onClick={handleFetchQualifyingResults}>QUALI RESULTS</button>
+            <button id='qualifying-color' className='qualifying-results' onClick={handleFetchQualifyingResults}><h2>QUALI RESULTS</h2></button>
             {isPopupVisible && qualifyingData && (
                 <div className="popup">
                     <div className="popup-content">

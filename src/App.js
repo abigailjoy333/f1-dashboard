@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import "./App.css";
 import ConstructorsChampionship from "./components/ConstructorsChampionship";
 import DriversChampionship from "./components/DriversChampionship";
@@ -5,26 +6,30 @@ import FavoriteDriver from "./components/FavoriteDriver";
 import QualifyingResults from "./components/QualifyingResults";
 import RaceResults from "./components/RaceResults";
 import UpcomingRaces from "./components/UpcomingRaces";
+import ColorChange from './components/ColorChange';
 
 function App() {
+  const [selectedDriver, setSelectedDriver] = useState('');
+
   return (
     <div>
+      <ColorChange selectedDriver={selectedDriver} />
       <div className="row">
         <div className="column">
-          <FavoriteDriver />
-          <UpcomingRaces />
+          <FavoriteDriver selectedDriver={selectedDriver} setSelectedDriver={setSelectedDriver} />
+          <UpcomingRaces selectedDriver={selectedDriver} />
         </div>
         <div className="column">
-          <ConstructorsChampionship />
+          <ConstructorsChampionship selectedDriver={selectedDriver} />
         </div>
       </div>
       <div className="row">
         <div className="column">
-          <DriversChampionship />
+          <DriversChampionship selectedDriver={selectedDriver} />
         </div>
         <div className="column">
-          <QualifyingResults />
-          <RaceResults />
+          <QualifyingResults selectedDriver={selectedDriver} />
+          <RaceResults selectedDriver={selectedDriver} />
         </div>
       </div>
     </div>

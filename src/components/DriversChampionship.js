@@ -19,7 +19,7 @@ function DriversChampionship() {
     }, []);
 
     return (
-        <div className='driver-standings'>
+        <div id='drivers-championship-color' className='driver-standings'>
             <h2>DRIVER STANDINGS</h2>
             <table>
                 <tbody>
