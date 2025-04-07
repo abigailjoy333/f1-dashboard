@@ -17,14 +17,14 @@ function DriversChampionship() {
 
     useEffect(() => {
         // get all races from the current season
-        fetch('https://api.openf1.org/v1/sessions?current_season=true&session_type=Race')
+        fetch('https://api.openf1.org/v1/sessions?year=2025&session_type=Race')
             .then(response => {
                 if (!response.ok) throw new Error('Failed to fetch race sessions');
                 return response.json();
             })
             .then(raceSessions => {
                 // get sprints too
-                fetch('https://api.openf1.org/v1/sessions?current_season=true&session_type=Sprint')
+                fetch('https://api.openf1.org/v1/sessions?year=2025&session_type=Sprint')
                     .then(response => {
                         if (!response.ok) throw new Error ('Failed to fetch sprint sessions');
                         return response.json();
@@ -62,7 +62,7 @@ function DriversChampionship() {
                         // fetch results for each session
                         allSessions.forEach(session => {
                             const isSprint = session.session_type === 'Sprint';
-                            const fetchPromise = fetch (`https://api.openf1.org/v1/results?session_key=${session.session_key}`)
+                            const fetchPromise = fetch ('https://api.openf1.org/v1/results?session_key=latest')
                                 .then(response => {
                                     if (!response.ok) throw new Error(`Failed to fetch results for session ${session.session_name}`);
                                     return response.json();
